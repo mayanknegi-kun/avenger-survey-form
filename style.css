@@ -18,7 +18,6 @@ body {
 .container {
   width: 50%;
   height: auto;
-  position: relative;
   top: 0;
   bottom: 0;
   left: 0;
@@ -27,6 +26,7 @@ body {
 }
 
 .form {
+    position: relative;
     max-height: fit-content;
     padding: 10px;
     border-radius: 20px;
@@ -69,18 +69,41 @@ label{
 }
 
 /* suggestion section */
-.suggestion div{
+.suggestions{
     display: flex;
-    margin: 15px 20px;
+    flex-direction: column;
+    margin:15px 20px;
 }
 
+.suggestions .dropdown{
+    margin-top: 20px;
+}
+
+select{
+    border-radius: 5px;
+    color: black;
+}
+
+/* textarea */
+.textarea{
+    margin-top: 20px;
+}
+
+.textarea textarea{
+    float: left;
+    width: 100%;
+    min-height: 75px;
+    outline: none;
+    resize: none;
+    border: 1px solid grey;
+}
 
 /* button */
 button{
-    position: relative;
+    display: block;
     background-color:#bfc8e6;
     border-radius: 10px;
-    margin: 20px 90px;
+    margin: 20px auto;
     width: 80%;
     height: 5vh;
     font-weight: 700;
