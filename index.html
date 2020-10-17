@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey form</title>
+</head>
+<body>
+    <div class="container"> 
+        <div class="intro">
+        <h1 id="title">Avengers Survey Form</h1>
+        <p id="description">Thank you for giving feedback for your favourite Avenger</p>
+        </div>
+
+        <div class="form">
+            <form action="#" id="survey-form">
+                <div class="info">
+                    <div class="form-element">
+                        <label for="name" id="name-label">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Your Name" required autofocus>
+                    </div>
+                    <div class="form-element">
+                        <label for="email" id="email-label">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="abc@xyz.com" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="age" id="number-label">Age(optional)</label>
+                        <input type="number" name="age" placeholder="Youe Age" id="number" min="10" max="60">
+                    </div>
+                    <div class="form-element">
+                        <label for="fav-avenger">Who is your favourite avenger?</label>
+                        <input type="text" name="choice" id="choice" required>
+                    </div>
+                </div>
+                <div class="suggestions">
+                    <div class="form-element ">
+                        <p>What kind of format you want them in?</p>
+                        <div id="options">
+                            <input type="radio" name="suggestion" id="movie" value="movie">
+                            <label for="movie">New-Movie</label>
+                            <br>
+                            <input type="radio" name="suggestion" id="series" value="web-series">
+                            <label for="series">Web-Series</label>
+                            <br>
+                            <input type="radio" name="suggestion" id="other" value="other">
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <label for="movie-list">Select The movie you like most</label>
+                        <br>
+                        <select name="movie-list" id="dropdown">
+                            <optgroup label="Avengers">
+                                <option value="Avenger">Avenger</option>
+                                <option value="Avenger2">Avenger2</option>
+                                <option value="Avenger3">Avenger3</option>
+                            </optgroup>
+                            <optgroup label="Other">
+                                <option value="ironman">Iron-Man</option>
+                                <option value="thor2">Thor2</option>
+                                <option value="captain-america">Captain America</option>
+                            </optgroup>
+                        </select>
+                    </div>
+    
+                    <div class="checkbox">
+                        <p>How would you like us to improve?</p>
+                        <input type="checkbox" value="new-character">
+                        <label for="character">Introduce New Character</label>
+                        <br>
+                        <input type="checkbox" value="fight-scene">
+                        <label for="fight-scene">More intense fight scene</label>
+                        <br>
+                        <input type="checkbox" value="frequent-content">
+                        <label for="frequent-content">More frequent content release</label>
+                        <br>
+                        <input type="checkbox" value="CGI">
+                        <label for="CGI">Improved CGI</label>
+                        <br>
+                    </div>
+    
+                    <div class="textarea">
+                        <label for="textarea">Any other Suggestion</label>
+                        <br>
+                        <textarea name="suggestion" id="suggestion" cols="50" rows="7"></textarea>
+                    </div>
+    
+                </div>
+                
+                <button type="submit" id="submit">SUBMIT</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
